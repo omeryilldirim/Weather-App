@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p id="date" class="text-light float-end pt-1 pe-1 mt-0">
+        <script>
+            const date = document.getElementById("date")
+            setInterval(() => {
+                date.innerText = 
+                `${new Date().getDate()}.${new Date().getMonth()+1}.${new Date().getFullYear()} - ${new Date().getHours() < 10 ? "0"+ new Date().getHours():new Date().getHours()}:${new Date().getMinutes() < 10 ? "0"+new Date().getMinutes():new Date().getMinutes()}:${new Date().getSeconds()< 10 ? "0"+new Date().getSeconds():new Date().getSeconds()}`
+            }, 1000);
+        </script>
+    </p>
+    <div class="clearfix"></div>
+    <h1 class="text-center text-light pt-0 pb-3">Weather App</h1>
+
+    <section class="search d-flex flex-column justify-content-center align-items-center my-2">
+        <form action="">
+            <input class="p-2 me-1" autofocus type="text" name="city" id="city-input" placeholder="  Search for a location...">
+            <button class="submit btn btn-success me-2 p-1" type="submit">SEARCH</button>
+            <button id="clear-all" class="btn btn-danger p-1">Clear All Queries</button>
+        </form>
+        <p class="warning text-light pt-3">Winter is coming...🥶🥶</p>
+    </section>
+
+    <section class="result d-flex justify-content-center align-items-center flex-wrap gap-3">
+
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
