@@ -17,7 +17,7 @@ Weather App(folder)
 └── index.html
 ```
 
-![Form](weather_app.gif)
+![Project Snapshot](snapshot.gif)
 
 ## Objects
 
