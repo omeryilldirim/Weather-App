@@ -1,7 +1,7 @@
 # Weather-App
 
 ## Description
-The Weather App provides the current weather data of queried location around the world by fetching data from Weather Api.
+The Weather App provides the current weather data of queried location around the world by fetching data from OpenWeatherMap API.
 
 ## Project Skeleton
 
