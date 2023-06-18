@@ -2,6 +2,9 @@
 
 ## Description
 The Weather App provides the current weather data of queried location around the world by fetching data from OpenWeatherMap API.
+## Expected Outcome
+
+![Project Snapshot](./assets/snapshot.gif)
 
 ## Project Skeleton
 
@@ -16,8 +19,6 @@ Weather App(folder)
 ├── app.js
 └── index.html
 ```
-
-![Project Snapshot](./assets/snapshot.gif)
 
 ## Objects
 
