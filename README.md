@@ -3,7 +3,7 @@
 ## Description
 The Weather App provides the current weather data of queried location around the world by fetching data from OpenWeatherMap API.
 ## Expected Outcome
-**<div align="center"> ![Project Snapshot](./assets/snapshot.gif) <div>**
+***<div align="center"> ![Project Snapshot](./assets/snapshot.gif) <div>***
 
 
 ## Project Skeleton
